@@ -20,9 +20,9 @@ This github repository contains all of the backend's files and code. The fronten
 
 - MongoDb
 
--Bootstrap
+*Bootstrap
 
--Nodejs
+*Nodejs
 
 ## About yoga-backend
 
