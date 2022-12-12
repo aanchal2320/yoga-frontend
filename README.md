@@ -1,70 +1,105 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# YOGA-REGISTRATION FORM Using React Js and MongoDb
 
-## Available Scripts
+This is a yoga registration form that accepts registrations based on a few validations and allows candidates who meet the form's requirements to participate in our yoga courses.
+This project is divided into two folders, one for frontend and the other for backend.
+This github repository contains all of the backend's files and code. The frontend has been deployed and is being hosted by render.
 
-In the project directory, you can run:
 
-### `npm start`
+## Frontend 
+- HTML
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Reactjs
 
-### `npm test`
+## Backend
+- HTML
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- CSS
 
-### `npm run build`
+- MongoDb
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## About yoga-backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In this code, we constructed a MongoDb database and linked it to our form.
+As we can see above, the db folder contains two primary files that connect our database to our code.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Step 1: In Mongoose, I created a database with a collection called users. This collection contains the information of persons who filled out the yoga class registration form.
 
-### `npm run eject`
+![database](https://github.com/aanchal2320/yoga-backend/blob/main/images/3.png?raw=true)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Step 2: I created a.env file in the github-mentioned subdirectory. This file includes the Mongoose database URL that we built.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![database](https://github.com/aanchal2320/yoga-backend/blob/main/images/7.png?raw=true)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Step 3: The database is linked in the dbConnect.js file using the.env file, which contains the MongoDb URL.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![database](https://github.com/aanchal2320/yoga-backend/blob/main/images/5.png?raw=true)
 
-## Learn More
+Step 4: Within the db folder, I constructed a userModel.js file This file contains all of the fields, including name, age, gender, and date of joining. These fields must be entered into the database.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![database](https://github.com/aanchal2320/yoga-backend/blob/main/images/6.png?raw=true)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Step 5: The app.js code connects to the database and sends the information given by the user in the registration form to Postman.
 
-### Code Splitting
+![database](https://github.com/aanchal2320/yoga-backend/blob/main/images/10.png?raw=true)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+After that, we execute our backend with the command "nodemon app.js," and our database is launched on the server localhost:3000.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## About the frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The form looks like the following:-
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+In the frontend code we created few functions:-
 
-### Deployment
+- Register()- this is the main function which includes all the use states of the fields whcih are to be entered by the user.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- handlePayment()- this is a dummy function which clicking the payment button alerts with a message that payment is successful and if any other field do not passes the validation it alerts that a particular field is not valid hence payment cannot be done.
 
-### `npm run build` fails to minify
+- handlesubmit()- it checks if age entered by the user is between 18 to 65, if yes then submission of the form is possible else a message is popped that age is invalid.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- return() - it includes all the HTML part,designing, alignment of the form fields.
+
+## The fields included in the frontend of the form are:-
+
+- Name : Which accepts the name of the participants
+
+- Age : Which accepts the age only if its between 18 and 65 years
+
+- Gender : This field has three options - Male,female,other
+
+- Batch Timings : This field has 4 options in drop down format which. participant can go for any of the four batch timings for that particular month.
+
+- payment: This is a dummy button which on clicking just shows with a message if payment is successful or not.
+
+- submit : This button submits the details of the user with an alert that "User Registered successfully" and now the details of the user can be seen in our database.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Screenshots
+
+![Registration Form](https://github.com/aanchal2320/yoga-backend/blob/main/images/4.png?raw=true)
+
+
+![Filled Form](https://github.com/aanchal2320/yoga-backend/blob/main/images/2.png?raw=true)
+
+
+![Registered](https://github.com/aanchal2320/yoga-backend/blob/main/images/1.png?raw=true)
+
+
+![Unsuccessful registration](https://github.com/aanchal2320/yoga-backend/blob/main/images/9.png?raw=true)
