@@ -5,6 +5,8 @@ This is a yoga registration form that accepts registrations based on a few valid
 This project is divided into two folders, one for frontend and the other for backend.
 This github repository contains all of the backend's files and code. The frontend has been deployed and is being hosted by render.
 
+## Hosted URL
+https://euphonious-syrniki-d27645.netlify.app/
 
 ## Frontend 
 - HTML
@@ -96,9 +98,6 @@ In the frontend code we created few functions:-
 
 
 ![Unsuccessful registration](https://github.com/aanchal2320/yoga-backend/blob/main/images/9.png?raw=true)
-
-## Hosted URL
-https://euphonious-syrniki-d27645.netlify.app/
 
 ## Backend Repository link
 https://github.com/aanchal2320/yoga-backend
