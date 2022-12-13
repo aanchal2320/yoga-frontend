@@ -77,17 +77,11 @@ In the frontend code we created few functions:-
 
 - submit : This button submits the details of the user with an alert that "User Registered successfully" and now the details of the user can be seen in our database.
 
+## ER Diagram representation
+![database](https://github.com/aanchal2320/yoga-frontend/blob/main/images/15.png?raw=true)
 
-
-
-
-
-
-
-
-
-
-
+## Flowchart representation
+![database](https://github.com/aanchal2320/yoga-frontend/blob/main/images/16.png?raw=true)
 
 
 ## Snapshots
