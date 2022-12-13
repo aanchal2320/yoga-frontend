@@ -13,12 +13,12 @@ This github repository contains all of the backend's files and code. The fronten
 
 - Reactjs
 
+* Bootstrap
+
 ## Backend
-- HTML
-
-- CSS
-
 - MongoDb
+
+* Nodejs
 
 ## About yoga-backend
 
@@ -31,7 +31,7 @@ Step 1: In Mongoose, I created a database with a collection called users. This c
 
 Step 2: I created a.env file in the github-mentioned subdirectory. This file includes the Mongoose database URL that we built.
 
-![database](https://github.com/aanchal2320/yoga-backend/blob/main/images/7.png?raw=true)
+
 
 Step 3: The database is linked in the dbConnect.js file using the.env file, which contains the MongoDb URL.
 
@@ -41,7 +41,6 @@ Step 4: Within the db folder, I constructed a userModel.js file This file contai
 
 ![database](https://github.com/aanchal2320/yoga-backend/blob/main/images/6.png?raw=true)
 
-Step 5: The app.js code connects to the database and sends the information given by the user in the registration form to Postman.
 
 ![database](https://github.com/aanchal2320/yoga-backend/blob/main/images/10.png?raw=true)
 
@@ -91,7 +90,7 @@ In the frontend code we created few functions:-
 
 
 
-## Screenshots
+## Snapshots
 
 ![Registration Form](https://github.com/aanchal2320/yoga-backend/blob/main/images/4.png?raw=true)
 
@@ -103,3 +102,9 @@ In the frontend code we created few functions:-
 
 
 ![Unsuccessful registration](https://github.com/aanchal2320/yoga-backend/blob/main/images/9.png?raw=true)
+
+## Hosted URL
+https://euphonious-syrniki-d27645.netlify.app/
+
+## Backend Repository link
+https://github.com/aanchal2320/yoga-backend
