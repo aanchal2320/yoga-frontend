@@ -107,5 +107,8 @@ In the frontend code we created few functions:-
 
 ![Unsuccessful registration](https://github.com/aanchal2320/yoga-backend/blob/main/images/9.png?raw=true)
 
+## Hosted Link
+https://euphonious-syrniki-d27645.netlify.app/
+
 ## Backend Repository link
 https://github.com/aanchal2320/yoga-backend
